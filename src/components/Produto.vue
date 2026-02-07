@@ -1,29 +1,31 @@
 <template>
-  <aside class="aside">
-    <img :src="{{ imagem1 }}" :alt="Imagem pequena do produto" class="img" />
-    <img :src="{{ imagem2 }}" :alt="Imagem pequena do produto" class="img" />
-    <img :src="{{ imagem3 }}" :alt="Imagem pequena do produto" class="img" />
-    <img :src="{{ imagem4 }}" :alt="Imagem pequena do produto" class="img" />
+    <div class="produto">
+        <aside class="aside">
+            <img :src="imagem1", alt="Imagem pequena do produto", class="img" />
+            <img :src="imagem2", alt="Imagem pequena do produto", class="img" />
+            <img :src="imagem3", alt="Imagem pequena do produto",  class="img" />
+            <img :src="imagem4", alt="Imagem pequena do produto", class="img" />
+        </aside>
 
-  </aside>
-  <article class="produto">
-    <img :src="{{ imagem-1 }}" :alt="Imagem principal do produto" class="img-1" />
-    <h2>{{ titulo }}</h2>
-    <p>{{ especificacao }}</p>
-    <p>{{ palavraChave }}</p>
+        <article class="article">
+            <img :src="{{ imagem1 }}", :alt="Imagem principal do produto", class="img-1" />
+            <h2>{{ titulo }}</h2>
+            <p>{{ especificacao }}</p>
+            <p>{{ palavraChave }}</p>
 
-    <p>{{ precoHabitual }}</p>
-    <p>{{ precoDescontado }}</p>
-      <!-- <span v-if="isAdmin" class="badge">Administrador</span> -->
+            <p>{{ precoHabitual }}</p>
+            <p>{{ precoDescontado }}</p>
+            <!-- <span v-if="isAdmin" class="badge">Administrador</span> -->
 
-  </article>
+        </article>
+  </div>
 </template>
 
 <script setup>
 const props = defineProps({
         titulo:{
             type: String,
-            required: True
+            required: true
         },
         especificacao:{
             type: String,
@@ -31,7 +33,7 @@ const props = defineProps({
         },
         palavraChave:{
             type: String,
-            required: True
+            required: true
         },
         imagem1:{
             type: String,
@@ -59,20 +61,6 @@ const props = defineProps({
         }
 })
 </script>
-<template>
-        <h2>Adicionar Produto a Página</h2>
-
-        <label>Título:<input type="text"></label>
-        <label>Especificações:<input type="text"></label>
-        <label>Palavra-chave: <input type="text"></label>
-        <label>Imagem 1: <input type="image"></label>
-        <label>Imagem 2: <input type="image"></label>
-        <label>Imagem 3: <input type="image"></label>
-        <label>Preço Habitual: <input type="number"></label>
-        <label>Preço Descontado: <input type="number"></label>
-        
-        <button id="submeteicion">Submeter Novo Produto</button>
-</template>
 
 <style scoped>
 </style>
