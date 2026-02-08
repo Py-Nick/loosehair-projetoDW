@@ -44,6 +44,20 @@
           <button class="botao-saiba-mais">Saiba mais</button>
         </div>
       </div>
+      <div class="adicionar-produto">
+        <h2>Adicionar Produto de Cabelo</h2>
+
+        <input v-model="novoProduto.name" type="text" placeholder="Nome"><br>
+        <input v-model="novoProduto.image" type="text" placeholder="Imagem"><br>
+        <input v-model="novoProduto.price" type="text" placeholder="Preço"><br>
+        <input v-model="novoProduto.size" type="text" placeholder="Tamanho"><br>
+        <input v-model="novoProduto.hairType" type="text" placeholder="Tipo de cabelo"><br>
+        <input v-model="novoProduto.benefit" type="text" placeholder="Benefícios"><br>
+        <input v-model="novoProduto.indication" type="text" placeholder="Indicação de uso"><br>
+
+        <button @click="enviarProduto">Enviar Novo Produto</button>
+
+      </div>
     </main>
 </template>
 
@@ -90,12 +104,37 @@ export default {
           benefit: 'FRIZZ CONTROLADO',
           indication: 'FINALIZAÇÃO'
         }
-      ]
+      ],
+      novoProduto: {
+        name: '',
+        image: '',
+        price: '',
+        size: '',
+        hairType: '',
+        benefit: '',
+        indication: ''
+      }
     }
   },
   methods: {
     selecionarProduto(index) {
       this.indiceProdutoAtual = index
+    },
+    adicionarProduto(produto){
+      this.products.push(produto)
+    },
+    enviarProduto() {
+      this.adicionarProduto({ ...this.novoProduto })
+
+      this.novoProduto = {
+        name: '',
+        image: '',
+        price: '',
+        size: '',
+        hairType: '',
+        benefit: '',
+        indication: ''
+      }
     }
   }
 }

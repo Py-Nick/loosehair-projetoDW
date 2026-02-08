@@ -5,7 +5,6 @@
       <router-link to="/perfume">Perfume</router-link>
       <router-link to="/maquiagem">Maquiagem</router-link>
       <router-link to="/skincare">SkinCare</router-link>
-      <a href="#">Adicionar</a>
   </nav>
 
   <router-view></router-view>

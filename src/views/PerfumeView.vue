@@ -1,5 +1,4 @@
 <template>
-  <div>
     <main>
       <div class="galeria-produtos">
         <div class="miniaturas">
@@ -45,8 +44,21 @@
           <button class="botao-saiba-mais">Saiba mais</button>
         </div>
       </div>
+      <div class="adicionar-produto">
+        <h2>Adicionar Perfume</h2>
+
+        <input v-model="novoProduto.name" type="text" placeholder="Nome"><br>
+        <input v-model="novoProduto.image" type="text" placeholder="Imagem"><br>
+        <input v-model="novoProduto.price" type="text" placeholder="Preço"><br>
+        <input v-model="novoProduto.size" type="text" placeholder="Tamanho"><br>
+        <input v-model="novoProduto.family" type="text" placeholder="Família"><br>
+        <input v-model="novoProduto.notes" type="text" placeholder="Notas de"><br>
+        <input v-model="novoProduto.occasion" type="text" placeholder="Ocasião"><br>
+
+        <button @click="enviarProduto">Enviar Novo Produto</button>
+
+      </div>
     </main>
-  </div>
 </template>
 
 <script>
@@ -92,12 +104,37 @@ export default {
           notes: 'SANDALO E CEDRO',
           occasion: 'ESPECIAL'
         }
-      ]
+      ],
+      novoProduto: {
+        name: '',
+        image: '',
+        price: '',
+        size: '',
+        family: '',
+        notes: '',
+        occasion: ''
+      }
     }
   },
   methods: {
     selecionarProduto(index) {
       this.indiceProdutoAtual = index
+    },
+    adicionarProduto(produto){
+      this.products.push(produto)
+    },
+    enviarProduto() {
+      this.adicionarProduto({ ...this.novoProduto })
+
+      this.novoProduto = {
+        name: '',
+        image: '',
+        price: '',
+        size: '',
+        family: '',
+        notes: '',
+        occasion: ''
+      }
     }
   }
 }
