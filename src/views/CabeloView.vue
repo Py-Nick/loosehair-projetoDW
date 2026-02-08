@@ -1,5 +1,4 @@
 <template>
-  <div>
     <main>
       <div class="galeria-produtos">
         <div class="miniaturas">
@@ -46,7 +45,6 @@
         </div>
       </div>
     </main>
-  </div>
 </template>
 
 <script>

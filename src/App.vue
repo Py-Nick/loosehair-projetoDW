@@ -7,6 +7,9 @@
       <router-link to="/skincare">SkinCare</router-link>
       <a href="#">Adicionar</a>
   </nav>
+
+  <router-view></router-view>
+  
   <Fundos />
 </template>
 
