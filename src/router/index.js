@@ -23,11 +23,9 @@ const routes = [
     component: () => import('../views/MaquiagemView.vue')
   },
   {
-    path: '/about',
-    name: 'about',
-    component: function () {
-      return import('../views/AboutView.vue')
-    }
+    path: '/skincare',
+    name: 'skincare',
+    component: () => import('../views/SkincareView.vue')
   }
 ]
 

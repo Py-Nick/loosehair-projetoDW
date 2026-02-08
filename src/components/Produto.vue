@@ -1,21 +1,20 @@
 <template>
     <div class="produto">
         <aside class="aside">
-            <img :src="imagem1", alt="Imagem pequena do produto", class="img" />
-            <img :src="imagem2", alt="Imagem pequena do produto", class="img" />
-            <img :src="imagem3", alt="Imagem pequena do produto",  class="img" />
-            <img :src="imagem4", alt="Imagem pequena do produto", class="img" />
+            <img :src="imagem1", alt="Imagem pequena do produto" class="img" />
+            <img :src="imagem2", alt="Imagem pequena do produto" class="img" />
+            <img :src="imagem3", alt="Imagem pequena do produto"  class="img" />
+            <img :src="imagem4", alt="Imagem pequena do produto" class="img" />
         </aside>
 
         <article class="article">
-            <img :src="{{ imagem1 }}", :alt="Imagem principal do produto", class="img-1" />
+            <img :src="imagem1", alt="Imagem principal do produto" class="img-1" />
             <h2>{{ titulo }}</h2>
             <p>{{ especificacao }}</p>
             <p>{{ palavraChave }}</p>
 
             <p>{{ precoHabitual }}</p>
             <p>{{ precoDescontado }}</p>
-            <!-- <span v-if="isAdmin" class="badge">Administrador</span> -->
 
         </article>
   </div>
@@ -61,6 +60,3 @@ const props = defineProps({
         }
 })
 </script>
-
-<style scoped>
-</style>

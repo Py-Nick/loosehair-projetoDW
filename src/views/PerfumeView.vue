@@ -1,27 +1,5 @@
 <template>
   <div>
-    <header>
-      <div class="logo">
-        <router-link to="/">Loose Hair</router-link>
-      </div>
-      <div class="barra-pesquisa">
-        <input type="text" placeholder="O que você procura hoje?" />
-        <button>🔍</button>
-      </div>
-      <div class="icones-cabecalho">
-        <a href="#"><img src="/images/do-utilizador.png" alt="Usuário" style="width: 20px; height: 20px;"></a>
-        <a href="#"><img src="/images/contorno-em-forma-de-coracao.png" alt="Favoritos" style="width: 20px; height: 20px;"></a>
-        <a href="#"><img src="/images/vista-lateral-vazia-do-carrinho-de-compras.png" alt="Carrinho" style="width: 20px; height: 20px;"></a>
-      </div>
-    </header>
-
-    <nav>
-      <router-link to="/cabelo">Cabelo</router-link>
-      <router-link to="/perfume">Perfume</router-link>
-      <router-link to="/maquiagem">Maquiagem</router-link>
-      <a href="#">Adicionar</a>
-    </nav>
-
     <main>
       <div class="galeria-produtos">
         <div class="miniaturas">
@@ -68,23 +46,6 @@
         </div>
       </div>
     </main>
-
-    <footer>
-      <div class="conteudo-rodape">
-        <div class="logo-pix">
-          <span>pix</span>
-        </div>
-        <div class="redes-sociais">
-          <a href="#"><img src="/images/facebook.png" alt="Facebook" style="width: 24px; height: 24px;"></a>
-          <a href="#"><img src="/images/whatsapp.png" alt="WhatsApp" style="width: 24px; height: 24px;"></a>
-          <a href="#"><img src="/images/instagram.png" alt="Instagram" style="width: 24px; height: 24px;"></a>
-        </div>
-        <div class="informacoes-rodape">
-          <p>Feito por: IFRN/CNAT/DIATINF/Juliana Vianna e Nicole de Aquino</p>
-          <p>Rua dos Bobos, 0 - Casa Muito Engraçada - RN. CEP: 0 | CNPJ: 0</p>
-        </div>
-      </div>
-    </footer>
   </div>
 </template>
 
@@ -148,74 +109,6 @@ export default {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-  background: white;
-}
-
-.logo a {
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-  text-decoration: none;
-}
-
-.barra-pesquisa {
-  display: flex;
-  gap: 5px;
-  flex: 1;
-  max-width: 400px;
-  margin: 0 20px;
-}
-
-.barra-pesquisa input {
-  flex: 1;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 25px;
-  background: #f5f5f5;
-}
-
-.barra-pesquisa button {
-  padding: 10px 15px;
-  background: #f5f5f5;
-  border: 1px solid #ddd;
-  border-radius: 25px;
-  cursor: pointer;
-}
-
-.icones-cabecalho {
-  display: flex;
-  gap: 15px;
-}
-
-.icones-cabecalho a {
-  text-decoration: none;
-  font-size: 20px;
-  color: #333;
-}
-
-.nav {
-  background: #6b46c1;
-  padding: 15px 0;
-  text-align: center;
-}
-
-.nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 20px;
-  font-weight: 500;
-  font-size: 16px;
-}
-
-.nav a:hover {
-  text-decoration: underline;
 }
 
 .main {
@@ -369,56 +262,7 @@ export default {
   background: #5a3a9e;
 }
 
-.footer {
-  background: #f5e6d3;
-  padding: 30px 0;
-  margin-top: 40px;
-  color: #333;
-  text-align: center;
-  position: relative;
-  width: 100%;
-}
-
-.conteudo-rodape {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-}
-
-.redes-sociais {
-  display: flex;
-  gap: 20px;
-}
-
-.redes-sociais a {
-  font-size: 24px;
-  text-decoration: none;
-}
-
-.informacoes-rodape {
-  text-align: right;
-}
-
-.informacoes-rodape p {
-  margin: 5px 0;
-  font-size: 14px;
-  color: #333;
-}
-
 @media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .barra-pesquisa {
-    margin: 0;
-    max-width: 100%;
-  }
-  
   .galeria-produtos {
     flex-direction: column;
   }
@@ -426,15 +270,6 @@ export default {
   .miniaturas {
     flex-direction: row;
     justify-content: center;
-  }
-  
-  .conteudo-rodape {
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .informacoes-rodape {
-    text-align: center;
   }
 }
 </style>
