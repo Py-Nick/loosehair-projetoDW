@@ -51,7 +51,7 @@
         <input v-model="novoProduto.image" type="text" placeholder="Imagem"><br>
         <input v-model="novoProduto.price" type="text" placeholder="Preço"><br>
         <input v-model="novoProduto.size" type="text" placeholder="Tamanho"><br>
-        <input v-model="novoProduto.type" type="text" placeholder="Tipo de cabelo"><br>
+        <input v-model="novoProduto.type" type="text" placeholder="Tipo de acabamento"><br>
         <input v-model="novoProduto.benefit" type="text" placeholder="Benefícios"><br>
         <input v-model="novoProduto.indication" type="text" placeholder="Indicação de uso"><br>
 
@@ -298,7 +298,25 @@ export default {
 .botao-saiba-mais:hover {
   background: #5a3a9e;
 }
-
+.adicionar-produto{
+  margin-bottom: 20px;
+}
+.adicionar-produto input{
+  padding: 10px 50px;
+  margin: 5px;
+}
+.adicionar-produto button{
+  width: 25%;
+  padding: 15px;
+  background: #6b46c1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
 @media (max-width: 768px) {
   .galeria-produtos {
     flex-direction: column;
