@@ -1,6 +1,6 @@
 <template>
-  <div class="pagina-cabelo">
-    <header class="cabecalho">
+  <div>
+    <header>
       <div class="logo">
         <router-link to="/">Loose Hair</router-link>
       </div>
@@ -15,14 +15,14 @@
       </div>
     </header>
 
-    <nav class="navegacao-principal">
+    <nav>
       <router-link to="/cabelo">Cabelo</router-link>
       <router-link to="/perfume">Perfume</router-link>
       <router-link to="/maquiagem">Maquiagem</router-link>
       <a href="#">Adicionar</a>
     </nav>
 
-    <main class="conteudo-principal">
+    <main>
       <div class="galeria-produtos">
         <div class="miniaturas">
           <div 
@@ -69,7 +69,7 @@
       </div>
     </main>
 
-    <footer class="rodape">
+    <footer>
       <div class="conteudo-rodape">
         <div class="logo-pix">
           <span>pix</span>
@@ -143,14 +143,14 @@ export default {
 </script>
 
 <style scoped>
-.pagina-cabelo {
+.div {
   font-family: Arial, sans-serif;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
-.cabecalho {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -200,13 +200,13 @@ export default {
   color: #333;
 }
 
-.navegacao-principal {
+.nav {
   background: #6b46c1;
   padding: 15px 0;
   text-align: center;
 }
 
-.navegacao-principal a {
+.nav a {
   color: white;
   text-decoration: none;
   margin: 0 20px;
@@ -214,11 +214,11 @@ export default {
   font-size: 16px;
 }
 
-.navegacao-principal a:hover {
+.nav a:hover {
   text-decoration: underline;
 }
 
-.conteudo-principal {
+.main {
   margin: 40px 0;
 }
 
@@ -369,7 +369,7 @@ export default {
   background: #5a3a9e;
 }
 
-.rodape {
+.footer {
   background: #f5e6d3;
   padding: 30px 0;
   margin-top: 40px;
@@ -409,7 +409,7 @@ export default {
 }
 
 @media (max-width: 768px) {
-  .cabecalho {
+  .header {
     flex-direction: column;
     gap: 20px;
   }
