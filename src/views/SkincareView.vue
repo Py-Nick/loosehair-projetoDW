@@ -70,7 +70,7 @@ export default {
       products: [
         {
           name: 'ESFOLIANTE',
-          image: '/images/maquiagem.webp',
+          image: require('@/images/skincare.png'),
           price: '45,90',
           size: '70ML',
           type: 'TODAS AS PELES',
@@ -79,7 +79,7 @@ export default {
         },
         {
           name: 'PROTETOR SOLAR',
-          image: '/images/maquiagem2.jpg',
+          image: require('@/images/skincare2.webp'),
           price: '38,90',
           size: '100ML',
           type: 'TODAS AS PELES',
@@ -88,7 +88,7 @@ export default {
         },
         {
           name: 'HIDRATANTE',
-          image: '/images/maquiagem3.webp',
+          image: require('@/images/skincare3.webp'),
           price: '32,90',
           size: '4G',
           type: 'PELES SENSÍVEIS',
@@ -97,7 +97,7 @@ export default {
         },
         {
           name: 'DEMAQUILANTE',
-          image: '/images/maquiagem4.webp',
+          image: require('@/images/skincare4.jpg'),
           price: '28,90',
           size: '8G',
           type: 'TODAS AS PELES',

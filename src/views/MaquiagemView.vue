@@ -70,7 +70,7 @@ export default {
       products: [
         {
           name: 'BASE LÍQUIDA',
-          image: '/images/maquiagem.webp',
+          image: require('@/images/maquiagem.webp'),
           price: '45,90',
           size: '30ML',
           type: 'COBERTURA MÉDIA',
@@ -79,7 +79,7 @@ export default {
         },
         {
           name: 'MÁSCARA DE CÍLIOS',
-          image: '/images/maquiagem2.jpg',
+          image: require('@/images/maquiagem2.jpg'),
           price: '38,90',
           size: '10ML',
           type: 'VOLUME EXTRA',
@@ -88,7 +88,7 @@ export default {
         },
         {
           name: 'BATOM MATTE',
-          image: '/images/maquiagem3.webp',
+          image: require('@/images/maquiagem3.webp'),
           price: '32,90',
           size: '4G',
           type: 'ACABAMENTO SECO',
@@ -97,7 +97,7 @@ export default {
         },
         {
           name: 'BLUSH EM PÓ',
-          image: '/images/maquiagem4.webp',
+          image: require('@/images/maquiagem4.webp'),
           price: '28,90',
           size: '8G',
           type: 'ACABAMENTO AVELUDADO',

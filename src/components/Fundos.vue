@@ -5,9 +5,9 @@
             <span>pix</span>
         </div>
         <div class="redes-sociais">
-            <a href="#"><img src="/images/facebook.png" alt="Facebook" style="width: 24px; height: 24px;"></a>
-            <a href="#"><img src="/images/whatsapp.png" alt="WhatsApp" style="width: 24px; height: 24px;"></a>
-            <a href="#"><img src="/images/instagram.png" alt="Instagram" style="width: 24px; height: 24px;"></a>
+            <a href="#"><img src="@/images/facebook.png" alt="Facebook" style="width: 24px; height: 24px;"></a>
+            <a href="#"><img src="@/images/whatsapp.png" alt="WhatsApp" style="width: 24px; height: 24px;"></a>
+            <a href="#"><img src="@/images/instagram.png" alt="Instagram" style="width: 24px; height: 24px;"></a>
         </div>
         <div class="informacoes-rodape">
             <p>Feito por: IFRN/CNAT/DIATINF/Juliana Vianna e Nicole de Aquino</p>
@@ -26,11 +26,9 @@
 }
 .footer {
   background: #f5e6d3;
-  padding: 30px 0;
-  margin-top: 40px;
+  padding: 30px 40px;
+  margin-top: 60px;
   color: #333;
-  text-align: center;
-  position: relative;
   width: 100%;
 }
 
@@ -41,16 +39,25 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+  gap: 40px;
+}
+
+.logo-pix {
+  font-size: 18px;
+  font-weight: bold;
+  white-space: nowrap;
 }
 
 .redes-sociais {
   display: flex;
   gap: 20px;
+  justify-content: center;
 }
 
 .redes-sociais a {
-  font-size: 24px;
+  display: flex;
   text-decoration: none;
+  align-items: center;
 }
 
 .informacoes-rodape {
@@ -61,11 +68,17 @@
   margin: 5px 0;
   font-size: 14px;
   color: #333;
+  font-weight: 500;
 }
 @media (max-width: 768px) {
+  footer {
+    padding: 20px;
+  }
   .conteudo-rodape {
     flex-direction: column;
     text-align: center;
+    padding: 0;
+    gap: 15px;
   }
   
   .informacoes-rodape {

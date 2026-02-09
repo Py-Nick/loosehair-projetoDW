@@ -70,7 +70,7 @@ export default {
       products: [
         {
           name: 'SHAMPOO REPARADOR',
-          image: '/images/cabelo.webp',
+          image: require('@/images/cabelo.webp'),
           price: '35,90',
           size: '300ML',
           hairType: 'DANIFICADO',
@@ -79,7 +79,7 @@ export default {
         },
         {
           name: 'CONDICIONADOR HIDRATANTE',
-          image: '/images/cabelo2.jpg',
+          image: require('@/images/cabelo2.jpg'),
           price: '32,90',
           size: '300ML',
           hairType: 'SECO',
@@ -88,7 +88,7 @@ export default {
         },
         {
           name: 'MÁSCARA DE TRATAMENTO',
-          image: '/images/cabelo3.webp',
+          image: require('@/images/cabelo3.webp'),
           price: '42,90',
           size: '250G',
           hairType: 'TODOS OS TIPOS',
@@ -97,7 +97,7 @@ export default {
         },
         {
           name: 'ÓLEO CAPILAR',
-          image: '/images/cabelo4.webp',
+          image: require('@/images/cabelo4.webp'),
           price: '28,90',
           size: '60ML',
           hairType: 'TODOS OS TIPOS',

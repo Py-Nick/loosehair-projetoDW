@@ -8,26 +8,21 @@
             <button>🔍</button>
         </div>
         <div class="icones-cabecalho">
-            <a href="#"><img src="/images/do-utilizador.png" alt="Usuário" style="width: 20px; height: 20px;"></a>
-            <a href="#"><img src="/images/contorno-em-forma-de-coracao.png" alt="Favoritos" style="width: 20px; height: 20px;"></a>
-            <a href="#"><img src="/images/vista-lateral-vazia-do-carrinho-de-compras.png" alt="Carrinho" style="width: 20px; height: 20px;"></a>
+            <a href="#"><img src="@/images/do-utilizador.png" alt="Usuário" style="width: 20px; height: 20px;"></a>
+            <a href="#"><img src="@/images/contorno-em-forma-de-coracao.png" alt="Favoritos" style="width: 20px; height: 20px;"></a>
+            <a href="#"><img src="@/images/vista-lateral-vazia-do-carrinho-de-compras.png" alt="Carrinho" style="width: 20px; height: 20px;"></a>
         </div>
     </header>
 </template>
 
 <style scoped>
-.div {
-  font-family: Arial, sans-serif;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
-  background: white;
+  padding: 20px 40px;
+  background: rgb(201, 67, 241);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .logo a {
@@ -39,43 +34,44 @@
 
 .barra-pesquisa {
   display: flex;
+  align-items: center;
   gap: 5px;
-  flex: 1;
   max-width: 400px;
-  margin: 0 20px;
 }
 
 .barra-pesquisa input {
   flex: 1;
-  padding: 10px;
+  padding: 10px 15px;
   border: 1px solid #ddd;
   border-radius: 25px;
   background: #f5f5f5;
+  font-size: 14px;
 }
 
 .barra-pesquisa button {
   padding: 10px 15px;
   background: #f5f5f5;
   border: 1px solid #ddd;
-  border-radius: 25px;
+  border-radius: 50%;
   cursor: pointer;
+  font-size: 18px;
 }
 
 .icones-cabecalho {
   display: flex;
-  gap: 15px;
+  gap: 20px;
 }
 
 .icones-cabecalho a {
   text-decoration: none;
-  font-size: 20px;
   color: #333;
 }
 
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
+    padding: 15px 20px;
   }
   
   .barra-pesquisa {

@@ -8,9 +8,9 @@
           <p>Produtos de beleza para todos os estilos</p>
         </div>
         <div class="imagens-principais">
-          <img src="/images/principal.jfif" alt="Principal 1" class="imagem-hero" />
-          <img src="/images/principal2.webp" alt="Principal 2" class="imagem-hero" />
-          <img src="/images/principal3.webp" alt="Principal 3" class="imagem-hero" />
+          <img src="@/images/principal.jpg" alt="Principal 1" class="imagem-hero" />
+          <img src="@/images/principal2.webp" alt="Principal 2" class="imagem-hero" />
+          <img src="@/images/principal3.webp" alt="Principal 3" class="imagem-hero" />
         </div>
       </section>
 
@@ -18,7 +18,7 @@
         <h2>Nossas Categorias</h2>
         <div class="categoria-grid">
           <div class="categoria-card">
-            <img src="/images/principal.jpg" alt="Cabelos" />
+            <img src="@/images/cabelo2.jpg" alt="Cabelos" />
             <div class="categoria-info">
               <h3>Cabelos</h3>
               <p>Tratamentos e styling para todos os tipos de cabelo</p>
@@ -27,7 +27,7 @@
           </div>
           
           <div class="categoria-card">
-            <img src="/images/principal2.jpg" alt="Perfumes" />
+            <img src="@/images/perfume.webp" alt="Perfumes" />
             <div class="categoria-info">
               <h3>Perfumes</h3>
               <p>Fragrâncias únicas para sua personalidade</p>
@@ -36,7 +36,7 @@
           </div>
           
           <div class="categoria-card">
-            <img src="/images/principal3.jpg" alt="Maquiagem" />
+            <img src="@/images/maquiagem2.jpg" alt="Maquiagem" />
             <div class="categoria-info">
               <h3>Maquiagem</h3>
               <p>Realce sua beleza com nossos produtos</p>
@@ -50,28 +50,28 @@
         <h2>Produtos em Destaque</h2>
         <div class="produtos-grid">
           <div class="produto-card">
-            <img src="/images/cabelo.webp" alt="Shampoo Reparador" />
+            <img src="@/images/cabelo.webp" alt="Shampoo Reparador" />
             <h3>SHAMPOO REPARADOR</h3>
             <p class="preco">R$ 35,90</p>
             <button class="botao-comprar">Comprar</button>
           </div>
           
           <div class="produto-card">
-            <img src="/images/cabelo2.jpg" alt="Condicionador Hidratante" />
+            <img src="@/images/cabelo2.jpg" alt="Condicionador Hidratante" />
             <h3>CONDICIONADOR HIDRATANTE</h3>
             <p class="preco">R$ 32,90</p>
             <button class="botao-comprar">Comprar</button>
           </div>
           
           <div class="produto-card">
-            <img src="/images/cabelo3.webp" alt="Máscara de Tratamento" />
+            <img src="@/images/cabelo3.webp" alt="Máscara de Tratamento" />
             <h3>MÁSCARA DE TRATAMENTO</h3>
             <p class="preco">R$ 42,90</p>
             <button class="botao-comprar">Comprar</button>
           </div>
           
           <div class="produto-card">
-            <img src="/images/cabelo4.webp" alt="Óleo Capilar" />
+            <img src="@/images/cabelo4.webp" alt="Óleo Capilar" />
             <h3>ÓLEO CAPILAR</h3>
             <p class="preco">R$ 28,90</p>
             <button class="botao-comprar">Comprar</button>

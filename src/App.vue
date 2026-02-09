@@ -1,6 +1,6 @@
 <template>
   <Navbar />
-  <nav>
+  <nav class="nav">
       <router-link to="/cabelo">Cabelo</router-link>
       <router-link to="/perfume">Perfume</router-link>
       <router-link to="/maquiagem">Maquiagem</router-link>
@@ -17,28 +17,66 @@
   import Fundos from './components/Fundos.vue';
 </script>
 
-<style scoped>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
+
 .nav {
   background: #6b46c1;
   padding: 15px 0;
-  text-align: center;
-}
-.nav a, .nav router-link {
-  color: white;
-  text-decoration: none;
-  margin: 0 20px;
-  font-weight: 500;
-  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.nav a:hover, .nav router-link:hover {
-  text-decoration: underline;
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 8px 0;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.nav a:hover {
+  border-bottom: 2px solid white;
+}
+
+.nav router-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 8px 0;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.nav router-link:hover {
+  border-bottom: 2px solid white;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+  }
 }
 </style>

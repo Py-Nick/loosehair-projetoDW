@@ -70,7 +70,7 @@ export default {
       products: [
         {
           name: 'PERFUME FLORAL',
-          image: '/images/perfume.webp',
+          image: require('@/images/perfume.webp'),
           price: '125,90',
           size: '50ML',
           family: 'FLORAL',
@@ -79,7 +79,7 @@ export default {
         },
         {
           name: 'PERFUME AMBARIANO',
-          image: '/images/perfume2.jpg',
+          image: require('@/images/perfume2.webp'),
           price: '98,90',
           size: '75ML',
           family: 'AMBAR',
@@ -88,7 +88,7 @@ export default {
         },
         {
           name: 'PERFUME CÍTRICO',
-          image: '/images/perfume3.webp',
+          image: require('@/images/perfume3.webp'),
           price: '85,90',
           size: '100ML',
           family: 'CÍTRICA',
@@ -97,7 +97,7 @@ export default {
         },
         {
           name: 'PERFUME MADEIRADO',
-          image: '/images/perfume4.webp',
+          image: require('@/images/perfume4.webp'),
           price: '150,90',
           size: '30ML',
           family: 'MADEIRADA',
