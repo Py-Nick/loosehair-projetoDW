@@ -21,7 +21,7 @@
             <img src="@/images/cabelo2.jpg" alt="Cabelos" />
             <div class="categoria-info">
               <h3>Cabelos</h3>
-              <p>Tratamentos e styling para todos os tipos de cabelo</p>
+              <p>Tratamentos para todos os tipos de cabelo</p>
               <router-link to="/cabelo" class="botao-categoria">Ver Produtos</router-link>
             </div>
           </div>
@@ -41,6 +41,15 @@
               <h3>Maquiagem</h3>
               <p>Realce sua beleza com nossos produtos</p>
               <router-link to="/maquiagem" class="botao-categoria">Ver Produtos</router-link>
+            </div>
+          </div>
+
+          <div class="categoria-card">
+            <img src="@/images/skincare2.webp" alt="SkinCare" />
+            <div class="categoria-info">
+              <h3>SkinCare</h3>
+              <p>Produtos para cuidar da sua pele</p>
+              <router-link to="/skincare" class="botao-categoria">Ver Produtos</router-link>
             </div>
           </div>
         </div>
