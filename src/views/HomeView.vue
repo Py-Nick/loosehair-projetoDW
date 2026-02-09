@@ -18,7 +18,7 @@
         <h2>Nossas Categorias</h2>
         <div class="categoria-grid">
           <div class="categoria-card">
-            <img src="@/images/cabelo2.jpg" alt="Cabelos" />
+            <img src="@/images/cabelo6.jpg" alt="Cabelos" />
             <div class="categoria-info">
               <h3>Cabelos</h3>
               <p>Tratamentos para todos os tipos de cabelo</p>
@@ -66,21 +66,21 @@
           </div>
           
           <div class="produto-card">
-            <img src="@/images/cabelo2.jpg" alt="Condicionador Hidratante" />
+            <img src="@/images/maquiagem.webp" alt="Condicionador Hidratante" />
             <h3>CONDICIONADOR HIDRATANTE</h3>
             <p class="preco">R$ 32,90</p>
             <button class="botao-comprar">Comprar</button>
           </div>
           
           <div class="produto-card">
-            <img src="@/images/cabelo3.webp" alt="Máscara de Tratamento" />
+            <img src="@/images/perfume3.webp" alt="Máscara de Tratamento" />
             <h3>MÁSCARA DE TRATAMENTO</h3>
             <p class="preco">R$ 42,90</p>
             <button class="botao-comprar">Comprar</button>
           </div>
           
           <div class="produto-card">
-            <img src="@/images/cabelo4.webp" alt="Óleo Capilar" />
+            <img src="@/images/skincare4.jpg" alt="Óleo Capilar" />
             <h3>ÓLEO CAPILAR</h3>
             <p class="preco">R$ 28,90</p>
             <button class="botao-comprar">Comprar</button>
@@ -99,25 +99,12 @@ export default {
 </script>
 
 <style scoped>
-.div {
-  font-family: Arial, sans-serif;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
 .hero {
-  background: white;
-  color: #333;
   padding: 40px 20px;
   text-align: center;
   border-radius: 15px;
   margin: 40px 0;
   border: 1px solid #ddd;
-}
-
-.hero-content {
-  margin-bottom: 40px;
 }
 
 .hero-content h1 {
@@ -129,6 +116,7 @@ export default {
 .hero-content p {
   font-size: 20px;
   opacity: 0.9;
+  margin-bottom: 40px;
 }
 
 .imagens-principais {
@@ -159,13 +147,14 @@ export default {
   text-align: center;
   font-size: 32px;
   margin-bottom: 40px;
-  color: #333;
 }
 
 .categoria-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .categoria-card {
@@ -195,7 +184,6 @@ export default {
 .categoria-info h3 {
   font-size: 24px;
   margin-bottom: 10px;
-  color: #333;
 }
 
 .categoria-info p {
@@ -227,7 +215,6 @@ export default {
   text-align: center;
   font-size: 32px;
   margin-bottom: 40px;
-  color: #333;
 }
 
 .produtos-grid {
@@ -262,7 +249,6 @@ export default {
 .produto-card h3 {
   font-size: 18px;
   margin-bottom: 10px;
-  color: #333;
 }
 
 .produto-card .preco {

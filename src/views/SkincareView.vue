@@ -44,6 +44,38 @@
           <button class="botao-saiba-mais">Saiba mais</button>
         </div>
       </div>
+        <section class="queridinhos">
+          <h2>Os Queridinhos da Loose Hair</h2>
+          <div class="produtos-grid">
+            <div class="produto-card">
+              <img src="@/images/skincare5.webp" alt="Esfoliante" />
+              <h3>ESFOLIANTE</h3>
+              <p class="preco">R$ 45,90</p>
+              <button class="botao-comprar">Comprar</button>
+            </div>
+          
+            <div class="produto-card">
+              <img src="@/images/skincare6.webp" alt="Protetor Solar" />
+              <h3>PROTETOR SOLAR</h3>
+              <p class="preco">R$ 38,90</p>
+              <button class="botao-comprar">Comprar</button>
+            </div>
+          
+            <div class="produto-card">
+              <img src="@/images/skincare7.webp" alt="Hidratante" />
+              <h3>HIDRATANTE</h3>
+              <p class="preco">R$ 32,90</p>
+              <button class="botao-comprar">Comprar</button>
+            </div>
+          
+            <div class="produto-card">
+              <img src="@/images/skincare8.webp" alt="Demaquilante" />
+              <h3>DEMAQUILANTE</h3>
+              <p class="preco">R$ 28,90</p>
+              <button class="botao-comprar">Comprar</button>
+            </div>
+          </div>
+        </section>
       <div class="adicionar-produto">
         <h2>Adicionar Produto Skin Care</h2>
 
@@ -141,15 +173,10 @@ export default {
 </script>
 
 <style scoped>
-.div {
-  font-family: Arial, sans-serif;
+main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-}
-
-.main {
-  margin: 40px 0;
 }
 
 .galeria-produtos {
@@ -159,6 +186,7 @@ export default {
   background: #f8f8f8;
   padding: 30px;
   border-radius: 10px;
+  margin-bottom: 30px;
 }
 
 .miniaturas {
@@ -216,18 +244,12 @@ export default {
   border: 2px solid #ddd;
   border-radius: 12px;
   overflow: hidden;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-  background: white;
-}
 
-.imagem-principal:hover {
-  transform: scale(1.02);
 }
 
 .imagem-principal img {
   width: 100%;
-  height: 400px;
+  height: 600px;
   object-fit: cover;
 }
 
@@ -239,7 +261,6 @@ export default {
 .informacoes-produto h1 {
   font-size: 28px;
   margin-bottom: 20px;
-  color: #333;
 }
 
 .detalhes-produto {
@@ -258,10 +279,6 @@ export default {
 .rotulo {
   font-weight: bold;
   color: #555;
-}
-
-.valor {
-  color: #333;
 }
 
 .secao-preco {
@@ -300,13 +317,33 @@ export default {
 }
 .adicionar-produto{
   margin-bottom: 20px;
+  background: #f8f8f8;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.adicionar-produto h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
 }
 .adicionar-produto input{
-  padding: 10px 50px;
+  padding: 10px 15px;
   margin: 5px;
+  width: 400px;
+  max-width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
 }
 .adicionar-produto button{
-  width: 25%;
+  width: 400px;
+  max-width: 100%;
   padding: 15px;
   background: #6b46c1;
   color: white;
@@ -316,7 +353,80 @@ export default {
   font-weight: bold;
   cursor: pointer;
   transition: background 0.3s ease;
+  margin-top: 10px;
 }
+.adicionar-produto button:hover {
+  background: #5a3a9e;
+}
+  .queridinhos {
+    margin: 60px 0;
+  }
+
+  .queridinhos h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .produto-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .produto-card:hover {
+    transform: translateY(-3px);
+  }
+
+  .produto-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+
+  .produto-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .produto-card .preco {
+    font-size: 24px;
+    font-weight: bold;
+    color: #6b46c1;
+    margin-bottom: 15px;
+  }
+
+  .botao-comprar {
+    width: 100%;
+    padding: 12px;
+    background: #6b46c1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .botao-comprar:hover {
+    background: #5a3a9e;
+  }
+
 @media (max-width: 768px) {
   .galeria-produtos {
     flex-direction: column;

@@ -26,12 +26,11 @@
 
 body {
   font-family: Arial, sans-serif;
+  background-color: #fcfcf1;
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #fcfcf1;
   color: #2c3e50;
 }
 
@@ -55,20 +54,6 @@ body {
 }
 
 .nav a:hover {
-  border-bottom: 2px solid white;
-}
-
-.nav router-link {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 16px;
-  padding: 8px 0;
-  border-bottom: 2px solid transparent;
-  transition: border-color 0.3s;
-}
-
-.nav router-link:hover {
   border-bottom: 2px solid white;
 }
 

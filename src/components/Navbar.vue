@@ -16,13 +16,16 @@
 </template>
 
 <style scoped>
-.header {
-  display: flex;
-  justify-content: space-between;
+header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
   padding: 20px 40px;
-  background: rgb(201, 67, 241);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  justify-self: start;
 }
 
 .logo a {
@@ -37,6 +40,7 @@
   align-items: center;
   gap: 5px;
   max-width: 400px;
+  justify-self: center;
 }
 
 .barra-pesquisa input {
@@ -46,6 +50,7 @@
   border-radius: 25px;
   background: #f5f5f5;
   font-size: 14px;
+  width: 300px;
 }
 
 .barra-pesquisa button {
@@ -60,6 +65,7 @@
 .icones-cabecalho {
   display: flex;
   gap: 20px;
+  justify-self: end;
 }
 
 .icones-cabecalho a {
@@ -68,15 +74,27 @@
 }
 
 @media (max-width: 768px) {
-  .header {
-    flex-direction: column;
+  header {
+    grid-template-columns: 1fr;
     gap: 15px;
     padding: 15px 20px;
   }
   
+  .logo {
+    justify-self: center;
+  }
+  
   .barra-pesquisa {
-    margin: 0;
+    justify-self: center;
     max-width: 100%;
+  }
+  
+  .barra-pesquisa input {
+    width: 200px;
+  }
+  
+  .icones-cabecalho {
+    justify-self: center;
   }
 }
 </style>
