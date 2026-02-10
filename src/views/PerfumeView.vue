@@ -99,7 +99,8 @@ export default {
   data() {
     return {
       indiceProdutoAtual: 0,
-      products: [
+      // Carregar do localStorage OU usar o padrão
+      products: JSON.parse(localStorage.getItem('products')) || [
         {
           name: 'PERFUME FLORAL',
           image: require('@/images/perfume.webp'),
@@ -137,36 +138,37 @@ export default {
           occasion: 'ESPECIAL'
         }
       ],
-      novoProduto: {
+      novoProduto: { 
         name: '',
         image: '',
         price: '',
         size: '',
         family: '',
         notes: '',
-        occasion: ''
-      }
+        occasion: '' }
     }
   },
   methods: {
     selecionarProduto(index) {
-      this.indiceProdutoAtual = index
+      this.indiceProdutoAtual = index;
+    },
+    salvarNoLocalStorage() {
+      localStorage.setItem('products', JSON.stringify(this.products)); //salvar
     },
     adicionarProduto(produto){
-      this.products.push(produto)
+      this.products.push(produto);
+      this.salvarNoLocalStorage(); // Salvar
     },
     enviarProduto() {
-      this.adicionarProduto({ ...this.novoProduto })
-
-      this.novoProduto = {
+      this.adicionarProduto({ ...this.novoProduto }); // Limpar valores do forms
+      this.novoProduto = { 
         name: '',
         image: '',
         price: '',
         size: '',
         family: '',
         notes: '',
-        occasion: ''
-      }
+        occasion: '' };
     }
   }
 }
