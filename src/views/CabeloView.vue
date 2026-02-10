@@ -15,6 +15,7 @@
 import GaleriaProdutos from '@/components/GaleriaProdutos.vue'
 import QueridinhosProdutos from '@/components/QueridinhosProdutos.vue'
 import AdicionarProduto from '@/components/AdicionarProduto.vue'
+import Fundos from '@/components/Fundos.vue'
 
 export default {
   name: 'CabeloView',
@@ -66,43 +67,6 @@ export default {
     return {
       indiceProdutoAtual: 0,
       products: JSON.parse(localStorage.getItem('products')) || defaultProducts,
-        {
-          name: 'SHAMPOO REPARADOR',
-          image: require('@/images/cabelo.webp'),
-          price: '35,90',
-          size: '300ML',
-          hairType: 'DANIFICADO',
-          benefit: 'REPARAÇÃO PROFUNDA',
-          indication: 'USO DIÁRIO'
-        },
-        {
-          name: 'CONDICIONADOR HIDRATANTE',
-          image: require('@/images/cabelo2.jpg'),
-          price: '32,90',
-          size: '300ML',
-          hairType: 'SECO',
-          benefit: 'HIDRATAÇÃO INTENSA',
-          indication: 'PÓS-LAVAGEM'
-        },
-        {
-          name: 'MÁSCARA DE TRATAMENTO',
-          image: require('@/images/cabelo3.webp'),
-          price: '42,90',
-          size: '250G',
-          hairType: 'TODOS OS TIPOS',
-          benefit: 'NUTRIÇÃO E BRILHO',
-          indication: 'SEMANAL'
-        },
-        {
-          name: 'ÓLEO CAPILAR',
-          image: require('@/images/cabelo4.webp'),
-          price: '28,90',
-          size: '60ML',
-          hairType: 'TODOS OS TIPOS',
-          benefit: 'FRIZZ CONTROLADO',
-          indication: 'FINALIZAÇÃO'
-        }
-      ],
       produtosEspeciais: [
         {
           name: 'SHAMPOO REPARADOR',

@@ -66,43 +66,6 @@ export default {
     return {
       indiceProdutoAtual: 0,
       products: JSON.parse(localStorage.getItem('products')) || defaultProducts,
-        {
-          name: 'BODY SPLASH AROMA DE MORANGO',
-          image: require('@/images/perfume.webp'),
-          price: '35,90',
-          size: '50ML',
-          family: 'FLORAL',
-          notes: 'MORANGO',
-          occasion: 'DIÁRIA'
-        },
-        {
-          name: 'PERFUME AMBARIANO',
-          image: require('@/images/perfume2.webp'),
-          price: '98,90',
-          size: '75ML',
-          family: 'AMBAR',
-          notes: 'VANILHA E BAUNILHA',
-          occasion: 'NOTURNA'
-        },
-        {
-          name: 'PERFUME AROMA BAUNILHA',
-          image: require('@/images/perfume3.webp'),
-          price: '125,90',
-          size: '100ML',
-          family: 'FLORAL',
-          notes: 'FLORES E BAUNILHA',
-          occasion: 'VERÃO'
-        },
-        {
-          name: 'PERFUME DOCE',
-          image: require('@/images/perfume4.webp'),
-          price: '150,90',
-          size: '30ML',
-          family: 'DOCE',
-          notes: 'SANDALO E CEDRO',
-          occasion: 'ESPECIAL'
-        }
-      ],
       produtosEspeciais: [
         {
           name: 'PERFUME FLORAL',
