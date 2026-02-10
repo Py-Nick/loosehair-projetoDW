@@ -24,8 +24,48 @@ export default {
     AdicionarProduto
   },
   data() {
+    const defaultProducts = [
+      {
+        name: 'KIT SKINCARE BÁSICO',
+        image: require('@/images/skincare.png'),
+        price: '45,90',
+        size: '70ML',
+        type: 'TODAS AS PELES',
+        benefit: 'LIMPEZA PROFUNDA',
+        indication: 'USO SEMANAL'
+      },
+      {
+        name: 'PROTETOR SOLAR',
+        image: require('@/images/skincare2.webp'),
+        price: '38,90',
+        size: '100ML',
+        type: 'TODAS AS PELES',
+        benefit: 'LONGA DURAÇÃO',
+        indication: 'TODOS OS DIAS'
+      },
+      {
+        name: 'HIDRATANTE',
+        image: require('@/images/skincare3.webp'),
+        price: '32,90',
+        size: '4G',
+        type: 'PELES SENSÍVEIS',
+        benefit: 'TOQUE SECO',
+        indication: 'TODOS OS DIAS'
+      },
+      {
+        name: 'DEMAQUILANTE',
+        image: require('@/images/skincare4.jpg'),
+        price: '28,90',
+        size: '8G',
+        type: 'TODAS AS PELES',
+        benefit: 'ADSTRIGENTE',
+        indication: 'PÓS MAKE'
+      }
+    ]
+
     return {
-      products: [
+      indiceProdutoAtual: 0,
+      products: JSON.parse(localStorage.getItem('products')) || defaultProducts,
         {
           name: 'KIT SKINCARE BÁSICO',
           image: require('@/images/skincare.png'),
@@ -97,8 +137,27 @@ export default {
     }
   },
   methods: {
-    adicionarProduto(novoProduto) {
-      this.products.push(novoProduto)
+    selecionarProduto(index) {
+      this.indiceProdutoAtual = index
+    },
+    salvarNoLocalStorage() {
+      localStorage.setItem('products', JSON.stringify(this.products))
+    },
+    adicionarProduto(produto) {
+      this.products.push(produto)
+      this.salvarNoLocalStorage()
+    },
+    enviarProduto() {
+      this.adicionarProduto({ ...this.estruturaNovoProduto })
+      this.estruturaNovoProduto = {
+        name: '',
+        image: '',
+        price: '',
+        size: '',
+        type: '',
+        benefit: '',
+        indication: ''
+      }
     }
   }
 }

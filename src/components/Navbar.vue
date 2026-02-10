@@ -1,7 +1,7 @@
 <template>
     <header>
         <div class="logo">
-            <router-link to="/">Loose Hair</router-link>
+            <router-link to="/"><img src="@/images/Frame (1).png" alt=""></router-link>
         </div>
         <div class="barra-pesquisa">
             <input type="text" placeholder="O que você procura hoje?" />
