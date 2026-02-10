@@ -39,13 +39,10 @@ export default {
   },
   methods: {
     enviarProduto() {
-      // Cria uma cópia do novo produto com os dados preenchidos
       const produtoParaEnviar = { ...this.novoProduto }
       
-      // Emite o evento com o novo produto
       this.$emit('adicionar-produto', produtoParaEnviar)
       
-      // Reseta o formulário
       this.novoProduto = { ...this.estruturaProduto }
     },
     formatarPlaceholder(campo) {

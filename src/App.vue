@@ -14,7 +14,7 @@
 
 <script setup>
   import Navbar from './components/Navbar.vue';
-  import Fundos from './components/Footer.vue';
+  import Fundos from './components/Fundos.vue';
 </script>
 
 <style>

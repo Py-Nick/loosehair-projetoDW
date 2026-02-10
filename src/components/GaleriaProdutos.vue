@@ -55,7 +55,6 @@ export default {
       const produto = this.products[this.indiceProdutoAtual]
       const detalhes = {}
       
-      // Pega todas as propriedades exceto name, image e price
       for (const key in produto) {
         if (!['name', 'image', 'price'].includes(key)) {
           detalhes[key] = produto[key]
